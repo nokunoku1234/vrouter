@@ -113,7 +113,6 @@ class WidgetsVRouter extends VRouterApp {
     this.showSemanticsDebugger = false,
     this.debugShowWidgetInspector = false,
     this.debugShowCheckedModeBanner = true,
-    this.inspectorSelectButtonBuilder,
     this.shortcuts,
     this.actions,
     this.restorationScopeId,
@@ -326,14 +325,6 @@ class WidgetsVRouter extends VRouterApp {
   /// {@endtemplate}
   final bool debugShowCheckedModeBanner;
 
-  /// Builds the widget the [WidgetInspector] uses to switch between view and
-  /// inspect modes.
-  ///
-  /// This lets [MaterialApp] to use a material button to toggle the inspector
-  /// select mode without requiring [WidgetInspector] to depend on the
-  /// material package.
-  final InspectorSelectButtonBuilder? inspectorSelectButtonBuilder;
-
   /// {@macro flutter.widgets.widgetsApp.shortcuts}
   /// {@tool snippet}
   /// This example shows how to add a single shortcut for
@@ -476,7 +467,6 @@ class WidgetsVRouterState extends State<WidgetsVRouter>
         showSemanticsDebugger: widget.showSemanticsDebugger,
         debugShowWidgetInspector: widget.debugShowWidgetInspector,
         debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner,
-        inspectorSelectButtonBuilder: widget.inspectorSelectButtonBuilder,
         shortcuts: widget.shortcuts,
         actions: widget.actions,
         restorationScopeId: widget.restorationScopeId,

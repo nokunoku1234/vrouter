@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:vrouter/src/core/route.dart';
 import 'package:vrouter/src/core/vredirector.dart';

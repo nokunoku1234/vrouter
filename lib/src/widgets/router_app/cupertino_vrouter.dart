@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:vrouter/src/vlogs.dart';
-
 import 'package:vrouter/src/vrouter_core.dart';
 import 'package:vrouter/src/vrouter_scope.dart';
 import 'package:vrouter/src/vrouter_vroute_elements.dart';
@@ -81,8 +80,7 @@ class CupertinoVRouter extends VRouterApp {
     Future<void> Function(
       VRedirector vRedirector,
       void Function(Map<String, String> historyState) saveHistoryState,
-    )
-        beforeLeave = VoidVGuard.voidBeforeLeave,
+    ) beforeLeave = VoidVGuard.voidBeforeLeave,
     void Function(BuildContext context, String? from, String to) afterEnter =
         VoidVGuard.voidAfterEnter,
     Future<void> Function(VRedirector vRedirector) onPop =
@@ -97,8 +95,9 @@ class CupertinoVRouter extends VRouterApp {
     this.logs = VLogs.info,
     this.navigatorObservers = const [],
     this.builder,
-    @Deprecated('Please use navigatorKey instead.\n This has been removed because it is redundant with navigatorKey.')
-        this.appRouterKey,
+    @Deprecated(
+        'Please use navigatorKey instead.\n This has been removed because it is redundant with navigatorKey.')
+    this.appRouterKey,
     this.navigatorKey,
     // Bellow are the MaterialApp parameters
     this.theme,
@@ -115,7 +114,6 @@ class CupertinoVRouter extends VRouterApp {
     this.checkerboardOffscreenLayers = false,
     this.showSemanticsDebugger = false,
     this.debugShowCheckedModeBanner = true,
-    this.useInheritedMediaQuery = false,
     this.shortcuts,
     this.actions,
     this.restorationScopeId,
@@ -308,9 +306,6 @@ class CupertinoVRouter extends VRouterApp {
   /// {@macro flutter.widgets.widgetsApp.debugShowCheckedModeBanner}
   final bool debugShowCheckedModeBanner;
 
-  /// {@macro flutter.widgets.widgetsApp.useInheritedMediaQuery}
-  final bool useInheritedMediaQuery;
-
   /// {@macro flutter.widgets.widgetsApp.shortcuts}
   /// {@tool snippet}
   /// This example shows how to add a single shortcut for
@@ -449,7 +444,6 @@ class CupertinoVRouterState extends State<CupertinoVRouter>
         checkerboardOffscreenLayers: widget.checkerboardOffscreenLayers,
         showSemanticsDebugger: widget.showSemanticsDebugger,
         debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner,
-        useInheritedMediaQuery: widget.useInheritedMediaQuery,
         shortcuts: widget.shortcuts,
         actions: widget.actions,
         restorationScopeId: widget.restorationScopeId,

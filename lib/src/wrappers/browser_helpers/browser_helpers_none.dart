@@ -1,4 +1,4 @@
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import 'package:vrouter/src/vrouter_scope.dart';
 
 /// List of static methods to interact with the browser
@@ -34,8 +34,8 @@ class BrowserHelpers {
     String url, {
     required bool openNewTab,
   }) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrlString(url)) {
+      await launchUrlString(url);
     } else {
       throw Exception('Could not launch $url');
     }

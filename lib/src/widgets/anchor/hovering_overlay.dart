@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vrouter/vrouter.dart';
 
-import 'vanchor.dart';
-
 /// The default widget which will be displayed on hovering
 /// on [VAnchor]
 ///

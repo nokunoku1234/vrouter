@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:vrouter/src/core/vroute_information_parser.dart';
 import 'package:vrouter/src/helpers/vrouter_delegate_helper.dart';
 

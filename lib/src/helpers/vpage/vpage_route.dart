@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:vrouter/src/helpers/vpage/vdefault_page.dart';
 
 /// Helper to create a PageRoute which displays the desired animation

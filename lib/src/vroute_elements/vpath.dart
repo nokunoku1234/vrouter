@@ -221,6 +221,8 @@ class VPath extends VRouteElement with VoidVGuard, VoidVPopHandler {
       );
       if (childVRoute != null) return childVRoute;
     }
+
+    return null;
   }
 
   // /// Try to form a [VRoute] where this [VRouteElement] is the last [VRouteElement]

@@ -5,9 +5,6 @@ import 'package:vrouter/src/core/vrouter_delegate.dart';
 import 'package:vrouter/src/vlogs.dart';
 import 'package:vrouter/src/vrouter_scope.dart';
 
-import 'vurl_history/vrouter_modes.dart';
-import 'vurl_history/vurl_history.dart';
-
 /// Whether [_customUrlStrategy] has been set or not.
 ///
 /// It is valid to set [_customUrlStrategy] to null, so we can't use a null
